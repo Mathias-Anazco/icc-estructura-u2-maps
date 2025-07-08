@@ -146,6 +146,12 @@ Un `TreeMap` **no usa** `hashCode()` ni `equals()` para determinar la unicidad d
 
 Si se usara un `HashMap` en lugar de `TreeMap`, entonces `hashCode()` y `equals()` en la clave serían necesarios para evitar colisiones.
 
+![Captura de pantalla 2025-07-08 085438](https://github.com/user-attachments/assets/dffbb7cd-7b2f-4589-924b-744ad848014c)
+![Captura de pantalla 2025-07-08 085451](https://github.com/user-attachments/assets/afe6e035-1a4b-4e8e-b4e2-1a493932f333)
+
+
+
+
 ---
 
 ### Conclusión
