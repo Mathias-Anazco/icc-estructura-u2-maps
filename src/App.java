@@ -14,7 +14,7 @@ public class App {
         runEmpleadoExample();
 
         // Ejecuta los ejercicios de sumatoria y anagramas
-        runEjerccios();
+        //runEjerccios();
     }
 
     private static void runEmpleadoExample() {
@@ -29,8 +29,8 @@ public class App {
 
     }
 
-    private static void runEjerccios() {
-        throw new UnsupportedOperationException("Not implemented yet");
+    //private static void runEjerccios() {
+        //throw new UnsupportedOperationException("Not implemented yet");
 
-    }
+   // }
 }
