@@ -7,6 +7,10 @@ public class Empleado implements Comparable<Empleado> {
     private String name;
     private String position;
 
+    public Empleado(int id) {
+        this.id = id;
+    }
+
     public Empleado(int id, String name, String position) {
         this.id = id;
         this.name = name;
@@ -34,12 +38,12 @@ public class Empleado implements Comparable<Empleado> {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Empleado empleado = (Empleado) o;
-        return id == empleado.id && Objects.equals(name, empleado.name) && Objects.equals(position, empleado.position);
+        return id == empleado.id;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, position);
+        return Objects.hash(id);
     }
 
     @Override
