@@ -69,7 +69,6 @@ public class App {
         String texto = "hola mundo";
         System.out.print("Frecuencia de caracteres en " + texto + ": ");
         ejercicios.contarCaracteres(texto);
-
         String palabra1 = "roma";
         String palabra2 = "amor";
         boolean anagrama = ejercicios.sonAnagramas(palabra1, palabra2);
