@@ -59,6 +59,7 @@ public class App {
 
 
     private static void runEjerccios() {
+        System.out.println("--".repeat(30));
         Ejercicios ejercicios = new Ejercicios();
         int[] numeros = {9, 2, 3, 6};
         int objetivo = 5;
