@@ -61,18 +61,32 @@ public class App {
     private static void runEjerccios() {
         System.out.println("--".repeat(30));
         Ejercicios ejercicios = new Ejercicios();
+        String str1 = "listen";
+        String str2 = "silent";
+        String str3 = "hello";
+        String str4 = "bello";
+        boolean anagramResult = Ejercicios.areAnagrams(str1, str2);
+        System.out.println("¿" + str1 + " y " + str2 + " son anagramas? " + anagramResult);
+        boolean anagramResult2 = Ejercicios.areAnagrams(str3, str4);
+        System.out.println("¿" + str3 + " y " + str4 + " son anagramas? " + anagramResult2);
+
         int[] numeros = {9, 2, 3, 6};
         int objetivo = 5;
         int[] resultado = ejercicios.sumatoriaDeDos(numeros, objetivo);
-        System.out.println("Índices encontrados para suma " + objetivo + "= [" + resultado[0] + ", " + resultado[1] + "]");
+        if (resultado != null) {
+            System.out.println("Índices que suman " + objetivo + ": [" + resultado[0] + ", " + resultado[1] + "]");
+        } else {
+            System.out.println("No se encontró una combinación que sume " + objetivo);
+        }
 
-
-        String texto = "hola mundo";
-        System.out.print("Frecuencia de caracteres en " + texto + ": ");
+        String texto = "hola";
+        System.out.println("Conteo de caracteres en " + texto + " : ");
         ejercicios.contarCaracteres(texto);
+
         String palabra1 = "roma";
         String palabra2 = "amor";
-        boolean anagrama = ejercicios.sonAnagramas(palabra1, palabra2);
-        System.out.println("¿Son anagramas " + palabra1 + " y " + palabra2 + "? " + anagrama);
+        boolean resultado2 = ejercicios.sonAnagramas(palabra1, palabra2);
+        System.out.println("¿" + palabra1 + " y " + palabra2 + " son anagramas? " + resultado2);
     }
+
 }
